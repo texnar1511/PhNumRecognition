@@ -39,6 +39,7 @@ model = keras.Sequential(
         layers.Dense(10),
     ]
 )
+
 model.compile(
     loss=keras.losses.SparseCategoricalCrossentropy(from_logits=True),
     optimizer=keras.optimizers.Adam(lr=0.001),
